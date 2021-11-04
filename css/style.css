@@ -8,12 +8,15 @@ body {
     font-size: xx-large;
     text-align: center;
     color: #fff;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header,
 footer, 
 section,
-aside {
+aside,
+footer {
     display: flex;
     justify-content: center;
     overflow: auto;
@@ -32,28 +35,30 @@ header {
 
 footer {
     background-color: #9370db;
-    clear: both;
+}
+
+section,
+aside {
+    align-items: flex-start;
+    padding-top: 1%;
 }
 
 section {
     background-color: #00bfff;
     width: 50%;
     height: 80vh;
-    float: left;
 }
 
 #left {
     background-color: #228b22;
     width: 25%;
     height: 80vh;
-    float: left;
 }
 
 #right {
     background-color: #ffb6c1;
     width: 25%;
     height: 80vh;
-    float: left;
 }
 
 @media screen and (max-width: 992px) {
